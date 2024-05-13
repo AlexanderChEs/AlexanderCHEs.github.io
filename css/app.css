@@ -1,0 +1,69 @@
+:root{
+  --bs-blue:#037bc0;
+  --bs-green: #8cbc00;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-size: 1.6rem;
+line-height: 2;
+
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display', serif ;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+/*si el ancho de pantallaes mayor a768px*/
+@media(min-width:768px){
+   h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+}
+
+/* personalizados*/
+.tiendaMuebles,.text-primary{
+    color: var(--bs-blue) !important;
+}
+
+
+
+.hero{
+    background-image: url(../img/principal.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center center;
+}
+/*si el ancho de pantallaes mayor a768px*/
+@media(min-width:768px){
+    .hero{
+        height: 55rem;
+       
+    }
+    
+    .producto img{
+        height: 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
+}
+.categoria img:hover{
+    transform: scale(1.2);
+}
+
+.categoria img{
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
